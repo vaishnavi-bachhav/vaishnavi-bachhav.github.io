@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Portfolio & Blog</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+    }
+    /* Navbar */
+    .navbar {
+      background: rgba(34,34,34,0.8);
+      backdrop-filter: blur(10px);
+    }
+    .navbar .nav-link {
+      color: #fff;
+      transition: 0.3s;
+    }
+    .navbar .nav-link:hover {
+      color: #0dcaf0;
+    }
+    /* Hero */
+    .hero {
+      height: 100vh;
+      background: url("hero-bg.jpg") center/cover no-repeat;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7));
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 700px;
+      animation: fadeInUp 1s ease-in-out;
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    /* About */
+    .profile-pic {
+      width: 100%;
+      max-width: 280px;
+      border-radius: 50%;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+    /* Cards */
+    .card {
+      border: none;
+      border-radius: 15px;
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card img {
+      height: 200px;
+      object-fit: cover;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+    /* Footer */
+    footer {
+      background: #222;
+      color: white;
+      padding: 30px 20px;
+    }
+    footer a {
+      color: #0dcaf0;
+      margin: 0 10px;
+      font-size: 1.3rem;
+    }
+    footer a:hover {
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">MySite</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-content">
+    <h1 class="display-4 fw-bold">Hi, I'm [Your Name]</h1>
+    <p class="lead mb-4">Developer • Blogger • Creator</p>
+    <a href="#portfolio" class="btn btn-info btn-lg">View My Work</a>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="py-5">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-md-5 text-center">
+        <img src="profile.jpg" alt="Profile" class="profile-pic">
+      </div>
+      <div class="col-md-7">
+        <h2 class="fw-bold mb-3">About Me</h2>
+        <p class="text-muted">I’m passionate about building software solutions and sharing knowledge through my blog. With experience in web development and design, I enjoy turning ideas into reality and helping others learn along the way.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Portfolio -->
+<section id="portfolio" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5">Featured Projects</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <img src="project1.jpg" class="card-img-top" alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Project One</h5>
+            <p class="card-text">Short description of your project.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <img src="project2.jpg" class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Project Two</h5>
+            <p class="card-text">Another cool project summary.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <img src="project3.jpg" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Project Three</h5>
+            <p class="card-text">Details about your awesome work.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Blog -->
+<section id="blog" class="py-5">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5">Latest Blog Posts</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <img src="blog1.jpg" class="card-img-top" alt="Blog 1">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Blog Title One</h5>
+            <p class="card-text">A short preview of your post...</p>
+            <a href="#" class="btn btn-outline-info btn-sm">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <img src="blog2.jpg" class="card-img-top" alt="Blog 2">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Blog Title Two</h5>
+            <p class="card-text">Something insightful here...</p>
+            <a href="#" class="btn btn-outline-info btn-sm">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <img src="blog3.jpg" class="card-img-top" alt="Blog 3">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Blog Title Three</h5>
+            <p class="card-text">Quick sneak peek of content...</p>
+            <a href="#" class="btn btn-outline-info btn-sm">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-5 bg-light text-center">
+  <div class="container">
+    <h2 class="fw-bold">Get in Touch</h2>
+    <p>Email me at <a href="mailto:you@example.com">you@example.com</a></p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center">
+  <p>&copy; 2025 MySite</p>
+  <div class="mt-2">
+    <a href="#"><i class="bi bi-twitter"></i></a>
+    <a href="#"><i class="bi bi-linkedin"></i></a>
+    <a href="#"><i class="bi bi-github"></i></a>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
