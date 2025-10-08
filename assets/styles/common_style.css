@@ -10,76 +10,75 @@
   --color-error: #FF6B6B;
 }
 
-body{
-        background-color: var(--color-bg);
-
+body {
+  background-color: var(--color-bg);
 }
 
 .hero-section {
-      height: 100vh;
-      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-            url("/assets/images/background.jpg") center/cover no-repeat;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/assets/images/background.jpg") center/cover no-repeat;
 }
 
 .sacramento-regular {
-      font-family: "Sacramento", cursive;
-      font-weight: 400;
-      font-style: normal;
-      font-size: 5.5rem;
-      color: var(--color-accent);
+  font-family: "Sacramento", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 5.5rem;
+  color: var(--color-accent);
 }
 
 .type {
-      display: inline-block;
+  display: inline-block;
 }
 
 .type>span {
-      display: grid;
-      overflow: hidden;
-      height: 1.4em;
+  display: grid;
+  overflow: hidden;
+  height: 1.4em;
 }
 
 .type span span {
-      width: 0%;
-      max-width: max-content;
-      overflow: hidden;
-      height: inherit;
-      word-break: break-all;
-      animation:
-            c 0.5s infinite steps(1),
-            t 2s linear infinite alternate,
-            m 12s steps(3) infinite;
+  width: 0%;
+  max-width: max-content;
+  overflow: hidden;
+  height: inherit;
+  word-break: break-all;
+  animation:
+    c 0.5s infinite steps(1),
+    t 2s linear infinite alternate,
+    m 12s steps(3) infinite;
 }
 
 .type span span:before {
-      content: " ";
-      display: inline-block;
+  content: " ";
+  display: inline-block;
 }
 
 @keyframes t {
 
-      90%,
-      100% {
-            width: 100%
-      }
+  90%,
+  100% {
+    width: 100%
+  }
 }
 
 @keyframes c {
 
-      0%,
-      100% {
-            box-shadow: 5px 0 0 #0000
-      }
+  0%,
+  100% {
+    box-shadow: 5px 0 0 #0000
+  }
 
-      50% {
-            box-shadow: 5px 0 0 rgb(179, 255, 0)
-      }
+  50% {
+    box-shadow: 5px 0 0 rgb(179, 255, 0)
+  }
 }
 
 @keyframes m {
-      100% {
-            transform: translateY(-300%)
-      }
+  100% {
+    transform: translateY(-300%)
+  }
 }
 
 /* Header */
@@ -92,7 +91,7 @@ body{
   z-index: 999;
 }
 
-#mainMenu li > a {
+#mainMenu li>a {
   font-size: 12px;
   letter-spacing: 1px;
   color: #fff;
@@ -102,7 +101,7 @@ body{
   text-decoration: none;
 }
 
-.main-header.fixed-nav #mainMenu li > a {
+.main-header.fixed-nav #mainMenu li>a {
   color: #fff;
   text-decoration: none;
 }
@@ -111,7 +110,7 @@ body{
   margin-right: 30px;
 }
 
-#mainMenu li > a::before {
+#mainMenu li>a::before {
   position: absolute;
   content: "";
   width: calc(100% - 1px);
@@ -132,8 +131,8 @@ body{
   transition: transform 0.5s ease;
 }
 
-#mainMenu li > a:hover::before,
-#mainMenu li > a.active::before {
+#mainMenu li>a:hover::before,
+#mainMenu li>a.active::before {
   -webkit-transform: scale(1, 1);
   -ms-transform: scale(1, 1);
   transform: scale(1, 1);
@@ -142,7 +141,7 @@ body{
   transform-origin: left center;
 }
 
-.main-header.fixed-nav #mainMenu li > a::before {
+.main-header.fixed-nav #mainMenu li>a::before {
   background: #000;
 }
 
@@ -165,22 +164,26 @@ body{
   transition: all 0.4s ease;
 }
 
-.main-header.fixed-nav .navbar-brand > img:last-of-type {
+.main-header.fixed-nav .navbar-brand>img:last-of-type {
   display: block;
 }
 
-.main-header.fixed-nav .navbar-brand > img:first-of-type {
+.main-header.fixed-nav .navbar-brand>img:first-of-type {
   display: none;
 }
+
 .navbar-brand {
   color: #fff;
 }
+
 .main-header .navbar-brand img {
   max-width: 40px;
   animation: fadeInLeft 0.4s both 0.4s;
 }
+
 /* main-header end */
 @media (max-width: 991px) {
+
   /*header starts*/
   .collapse.in {
     display: block !important;
@@ -278,98 +281,407 @@ body{
   }
 
   /* Mobile menu */
-@media (max-width: 991px) {
-  .navbar-collapse {
-    background: rgba(0, 0, 0, 0.9);
-    padding: 15px 0;
+  @media (max-width: 991px) {
+    .navbar-collapse {
+      background: rgba(0, 0, 0, 0.9);
+      padding: 15px 0;
+    }
+
+    .navbar-nav .nav-link {
+      display: block;
+      color: #fff !important;
+      padding: 10px 0;
+    }
+
+    .navbar-toggler {
+      border: none;
+      background: transparent;
+    }
+
+    .icon-bar {
+      display: block;
+      width: 25px;
+      height: 3px;
+      margin: 5px auto;
+      background-color: #fff;
+      transition: all 0.3s ease;
+    }
   }
 
-  .navbar-nav .nav-link {
-    display: block;
-    color: #fff !important;
-    padding: 10px 0;
-  }
-
-  .navbar-toggler {
-    border: none;
-    background: transparent;
-  }
-
-  .icon-bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    background-color: #fff;
-    transition: all 0.3s ease;
-  }
-}
   /*header ends*/
 }
 
-.copyright{
-      background-color: var(--color-bg);
-      color: var(--color-text-muted);
+.copyright {
+  background-color: var(--color-bg);
+  color: var(--color-text-muted);
 }
 
 /* ---------------- 4. Customer Review Slider Section ------------------ */
-    .recommendations h2 {
-      color: #d4af37;
-      font-weight: 700;
-      letter-spacing: 1px;
-      margin-bottom: 10px;
-    }
+.recommendations h2 {
+  color: var(--color-accent);
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
 
-    .recommendations p.section-desc {
-      color: #cccccc;
-      max-width: 650px;
-      margin: 0 auto 50px;
-      font-size: 1.05rem;
-    }
+.recommendations p.section-desc {
+  color: var(--color-text-muted);
+  max-width: 650px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+
+}
 
 .cust-review {
-      border-radius: 20px;
-      padding: 40px 30px;
-    }
+  border-radius: 20px;
+  padding: 40px 30px;
+}
 
-    .cust-review .icon {
-      font-size: 32px;
-      color: #d4af37;
-    }
+.cust-review .icon {
+  font-size: 32px;
+  color: #d4af37;
+}
 
-    .cust-review .description {
-      font-style: italic;
-      color: var(--color-text-secondary);
-      margin: 20px 0;
-    }
+.cust-review .description {
+  font-style: italic;
+  color: var(--color-text-secondary);
+  margin: 20px 0;
+}
 
-    .cust-review .pic {
-      width: 100px;
-      height: 100px;
-      margin: 0 auto 15px;
-      overflow: hidden;
-      border-radius: 50%;
-      border: 3px solid #d4af37;
-    }
+.cust-review .testnm-name {
+  color: var(--color-accent);
+}
 
-   .cust-review .testnm-name {
-      color:var(--color-accent);
-    }
+.cust-review .testnm-post {
+  color: var(--color-text-muted);
+}
 
-   .cust-review .testnm-post {
-      color: var(--color-text-muted);
-    }
+.carousel-indicators [data-bs-target] {
+  background-color: #d4af37;
+}
 
-    .carousel-indicators [data-bs-target] {
-      background-color: #d4af37;
-    }
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  border-radius: 50%;
+  padding: 12px;
+}
 
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-      border-radius: 50%;
-      padding: 12px;
-    }
+.carousel-inner {
+  padding: 40px 0;
+}
 
-    .carousel-inner {
-      padding: 40px 0;
-    }
+/* ---------------- 4. Customer Review Slider Section End ------------------ */
+/* Tech stack */
+/* Main Section Card Styling (The big white boxes) */
+.tech-stacks h2 {
+  color: var(--color-accent);
+}
+
+.tech-stacks .section-desc {
+  color: var(--color-text-muted);
+}
+
+.section-card {
+  background-color: var(--color-surface);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Section Title Styling (The blue bracket look) */
+.section-title-light {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.section-title-light span {
+  padding: 0 1rem;
+}
+
+/* Tech Item Card Styling (The individual tech pills) */
+.tech-item-light {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0.75rem 1rem;
+  height: 50px;
+  border-radius: 0.75rem;
+  background-color: var(--color-bg);
+  /* border: 1px solid var(--card-border); */
+  transition: all 0.2s ease;
+  cursor: default;
+}
+
+.tech-item-light:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-1px);
+}
+
+.tech-icon-light {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  margin-right: 0.75rem;
+  border-radius: 0.5rem;
+  flex-shrink: 0;
+  /* Prevents icon from shrinking on small screens */
+}
+
+/* Style for the actual image logos */
+.tech-icon-light img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 0.5rem;
+}
+
+.tech-name-light {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  white-space: nowrap;
+  /* Prevent tech names from wrapping */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.text-logo-small {
+  font-weight: 700;
+  line-height: 1;
+}
+
+/* --- New/Updated Icon Styles for User's Stack --- */
+.icon-html {
+  background-color: #E44D26;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.icon-css {
+  background-color: #2965f1;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.icon-js {
+  background-color: #F7DF1E;
+  color: black;
+  font-size: 0.8rem;
+}
+
+.icon-bootstrap {
+  background-color: #7952B3;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.icon-react {
+  background-color: #61DAFB;
+  color: #000;
+  font-size: 1.2rem;
+}
+
+.icon-redux {
+  background-color: #764ABC;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.icon-xml {
+  background-color: #FF6600;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.icon-ajax {
+  background-color: #3B5998;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.icon-csharp {
+  background-color: #684990;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.icon-aspnet {
+  background-color: #512BD4;
+  color: white;
+  font-size: 0.7rem;
+}
+
+.icon-dapper {
+  background-color: #CC2936;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.icon-mssql {
+  background-color: #CC2936;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.icon-mongo {
+  background-color: #4DB33D;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.icon-azure {
+  background-color: #0078D4;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.icon-iis {
+  background-color: #000;
+  color: #0078D4;
+  font-size: 0.8rem;
+}
+
+.icon-jenkins {
+  background-color: #D24939;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.icon-git {
+  background-color: #F05032;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.icon-agile {
+  background-color: #22B24A;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.icon-jira {
+  background-color: #0052CC;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.icon-trello {
+  background-color: #0079BF;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.icon-test {
+  background-color: #20C997;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.icon-python {
+  background-color: #3776AB;
+  color: #FFD43B;
+  font-size: 1.5rem;
+}
+
+.icon-matlab {
+  background-color: #0076a8;
+  color: white;
+  font-size: 0.8rem;
+}
+
+/* Tech stack end */
+/* Contact us start*/
+
+.custom-h1 {
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  color: var(--color-accent);
+}
+
+.custom-intro-text {
+  color: var(--color-text-secondary);
+  line-height: 1.8;
+  max-width: 90%;
+}
+
+.custom-btn-email {
+  background-color: var(--color-accent);
+  border: 2px solid var(--color-accent);
+  color: var(--accent-gold) !important;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 0;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.custom-btn-email:hover {
+  background-color: var(--accent-gold);
+  color: var(--color-accent) !important;
+  border: 1px solid var(--color-accent) !important;
+}
+
+.custom-label {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.custom-input {
+  background-color: transparent;
+}
+
+.custom-input::placeholder {
+  color: var(--color-text-muted);
+}
+
+textarea:focus,
+input:focus {
+  outline: none !important;
+}
+
+.custom-input:focus {
+  background-color: transparent;
+  border-color: var(--color-accent);
+  color: var(--text-light);
+}
+
+.custom-textarea {
+  resize: vertical;
+}
+
+.custom-illustration {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .custom-navbar {
+    padding: 1rem;
+  }
+
+  .custom-nav-link,
+  .custom-contact-btn {
+    font-size: 0.85rem;
+  }
+
+  .custom-h1 {
+    font-size: 2rem;
+  }
+
+  .custom-intro-text {
+    max-width: 100%;
+  }
+}
+/* Contact us end */
