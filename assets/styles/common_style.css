@@ -323,6 +323,9 @@ body {
   color: var(--color-text-muted);
 }
 
+.social-links a{
+    text-decoration: none;
+}
 /* ---------------- 4. Customer Review Slider Section ------------------ */
 .recommendations h2 {
   color: var(--color-accent);
@@ -608,6 +611,10 @@ body {
 /* Tech stack end */
 /* Contact us start*/
 
+/* =========================
+   Contact Section Styles
+   ========================= */
+
 .custom-h1 {
   font-size: 2.5rem;
   letter-spacing: 1px;
@@ -620,10 +627,11 @@ body {
   max-width: 90%;
 }
 
+/* Button */
 .custom-btn-email {
   background-color: var(--color-accent);
   border: 2px solid var(--color-accent);
-  color: var(--accent-gold) !important;
+  color: var(--color-bg);
   text-transform: uppercase;
   font-weight: 600;
   border-radius: 0;
@@ -632,11 +640,12 @@ body {
 }
 
 .custom-btn-email:hover {
-  background-color: var(--accent-gold);
-  color: var(--color-accent) !important;
-  border: 1px solid var(--color-accent) !important;
+  background-color: transparent;
+  color: var(--color-accent);
+  border-color: var(--color-accent);
 }
 
+/* Form Elements */
 .custom-label {
   text-transform: uppercase;
   font-size: 0.8rem;
@@ -644,45 +653,33 @@ body {
   color: var(--color-text-primary);
 }
 
-.custom-input {
+.custom-input,
+.custom-textarea {
   background-color: transparent;
+  border: 1px solid var(--color-text-muted);
+  color: var(--color-text-primary);
 }
 
-.custom-input::placeholder {
+.custom-input::placeholder,
+.custom-textarea::placeholder {
   color: var(--color-text-muted);
 }
 
-textarea:focus,
-input:focus {
-  outline: none !important;
-}
-
-.custom-input:focus {
-  background-color: transparent;
+.custom-input:focus,
+.custom-textarea:focus {
+  outline: none;
   border-color: var(--color-accent);
-  color: var(--text-light);
+  background-color: transparent;
 }
 
-.custom-textarea {
-  resize: vertical;
-}
-
+/* Illustration */
 .custom-illustration {
   max-width: 100%;
   height: auto;
 }
 
-/* Media Queries for Responsiveness */
+/* Responsive Tweaks */
 @media (max-width: 768px) {
-  .custom-navbar {
-    padding: 1rem;
-  }
-
-  .custom-nav-link,
-  .custom-contact-btn {
-    font-size: 0.85rem;
-  }
-
   .custom-h1 {
     font-size: 2rem;
   }
