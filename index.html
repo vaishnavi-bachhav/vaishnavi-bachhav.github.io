@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Vaishnavi Bachhav's Portfolio" />
+    <title>Home | Vaishnavi Bachhav</title>
+
     <link rel="icon" type="image/x-icon" href="assets//images/favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -15,589 +18,580 @@
         xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLMDJ8qU3O2Ue4r3aB5j6Qd5A2jL0P/f5/r5M9Gv4K9Q==" crossorigin="anonymous"
         referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/styles/common_style.css">
-    <title>Vaishnavi Bachhav</title>
 </head>
 
 <body>
-   
-    <header class="main-header">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg main-nav px-0 align-items-center">
-                <!-- Logo -->
-                <a class="navbar-brand d-flex align-items-center" href="/mojo">
-                    <img src="assets/images/Transparent-brand.png" alt="vaishnavi-bachhav.github.io">
-                </a>
 
-                <!-- Toggle Button -->
+    <header class="main-header" role="banner">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg main-nav px-0 align-items-center" role="navigation"
+                aria-label="Main Navigation">
+                <span class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="assets/images/Transparent-brand.png" alt="Vaishnavi Bachhav logo" height="50"
+                        loading="lazy" />
+                </span>
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu"
                     aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="icon-bar icon-bar-1"></span>
-                    <span class="icon-bar icon-bar-2"></span>
-                    <span class="icon-bar icon-bar-3"></span>
+                    <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <!-- Navbar Menu -->
                 <div class="collapse navbar-collapse justify-content-end" id="mainMenu">
                     <ul class="navbar-nav text-uppercase f1">
-                        <li class="nav-item"><a class="nav-link active" href="#home">home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="aboutme.html">about me</a></li>
-                        <li class="nav-item"><a class="nav-link" href="blog.html">blog</a></li>
-                        <li class="nav-item"><a class="nav-link" href="projects.html">projects</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">contact</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="aboutme.html">About Me</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link " href="contact.html" aria-current="page">Contact</a>
+                        </li>
                     </ul>
                 </div>
             </nav>
         </div>
     </header>
- <!-- Hero Section -->
-    <div class="hero-section d-flex align-items-center justify-content-center text-center text-white">
-        <div>
-            <h1 class="display-3 fw-bold sacramento-regular">Vaishnavi Bachhav</h1>
-            <p class="lead">I am <span class="type">
-                    <span>
-                        <span>a Full Stack Developer</span>
-                        <span>a creative person!</span>
+    <!-- Hero Section -->
+    <main>
+        <section class="hero-section d-flex align-items-center justify-content-center text-center text-white">
+            <div>
+                <h1 class="display-3 fw-bold sacramento-regular">Vaishnavi Bachhav</h1>
+                <p class="lead">I am <span class="type">
+                        <span>
+                            <span>a Full Stack Developer</span>
+                            <span>a .NET and React Developer</span>
+                            <span>a creative person!</span>
+                        </span>
                     </span>
-                </span>
+                </p>
+            </div>
+        </section>
+        <!-- Recommendations start -->
+        <section class="container py-5 recommendations">
+            <h2 class="text-center">Recommendations</h2>
+            <p class="section-desc text-center">
+                Here’s what people have said about my work and collaborations — a reflection of passion, creativity, and
+                professionalism.
             </p>
-        </div>
-    </div>
-    <!-- Recommendations start -->
-    <div class="container py-5 recommendations">
-        <h2 class="text-center">Recommendations</h2>
-        <p class="section-desc text-center">
-            Here’s what people have said about my work and collaborations — a reflection of passion, creativity, and
-            professionalism.
-        </p>
-        <div id="customerCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div id="customerCarousel" class="carousel slide" data-bs-ride="carousel">
 
-            <!-- Indicators -->
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#customerCarousel" data-bs-slide-to="0" class="active"
-                    aria-current="true"></button>
-                <button type="button" data-bs-target="#customerCarousel" data-bs-slide-to="1"></button>
-                <button type="button" data-bs-target="#customerCarousel" data-bs-slide-to="2"></button>
+                <!-- Indicators -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#customerCarousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Go to first slide"></button>
+                    <button type="button" data-bs-target="#customerCarousel" data-bs-slide-to="1"
+                        aria-label="Go to second slide"></button>
+                    <button type="button" data-bs-target="#customerCarousel" data-bs-slide-to="2"
+                        aria-label="Go to third slide"></button>
+                </div>
+
+                <!-- Carousel Inner -->
+                <div class="carousel-inner">
+
+                    <!-- Review 1 -->
+                    <div class="carousel-item active">
+                        <div class="cust-review text-center col-lg-8 mx-auto">
+                            <i class="fa fa-quote-left icon mb-3" aria-hidden="true"></i>
+                            <p class="description">
+                                I had the privilege of managing Vaishnavi during her tenure as a Full Stack Developer on
+                                our
+                                team, I’ve had the pleasure of working with her. <br />
+
+                                Vaishnavi has an exceptional ability to design, develop, and deploy robust ASP.Net
+                                applications while seamlessly integrating both front-end and back-end technologies. Her
+                                technical expertise spans a wide array of tools and frameworks, including but not
+                                limited to
+                                C#, MVC, JavaScript, Angular/React, and SQL Server. <br />
+
+                                What truly sets Vaishnavi apart is her proactive approach to learning and collaboration.
+                                She
+                                is always eager to adopt new technologies, stay up-to-date with industry trends, and
+                                share
+                                knowledge with the team. In addition to her technical skills, Vaishnavi displayed strong
+                                ownership of her projects and took accountability for delivering high-quality work on
+                                time.
+                                Her professionalism, dedication, and positive attitude made a lasting impact on the team
+                                and
+                                our projects.
+                            </p>
+                            <h3 class="fw-bold text-uppercase testnm-name">Priya Ekbote</h3>
+                            <span class="d-block testnm-post">Executive Vice President - Aress Software</span>
+                        </div>
+                    </div>
+
+                    <!-- Review 2 -->
+                    <div class="carousel-item">
+                        <div class="cust-review text-center col-lg-8 mx-auto">
+                            <i class="fa fa-quote-left icon mb-3" aria-hidden="true"></i>
+                            <p class="description">
+                                I had the pleasure of working with Vaishnavi for a couple of years, and I can
+                                confidently
+                                say she is an exceptional software development professional. Her expertise in the .NET
+                                framework, coupled with her ability to deliver high-quality, scalable solutions, was
+                                exceptional. <br />
+
+                                Vaishnavi consistently demonstrated a strong work ethic, attention to detail, and a keen
+                                ability to solve complex problems efficiently. She is a proactive team player who is
+                                always
+                                willing to go the extra mile to ensure project success. <br />
+
+                                I highly recommend Vaishnavi for any role that requires deep technical knowledge and a
+                                passion for software development. <br />
+                            </p>
+                            <h3 class="fw-bold text-uppercase testnm-name">Kiran Vidhate</h3>
+                            <span class="d-block testnm-post">Vice President - Aress Software</span>
+                        </div>
+                    </div>
+
+                    <!-- Review 3 -->
+                    <div class="carousel-item">
+                        <div class="cust-review text-center col-lg-8 mx-auto">
+                            <i class="fa fa-quote-left icon mb-3" aria-hidden="true"></i>
+                            <p class="description">
+                                Having worked with Vaishnavi, I must say that Vaishnavi is an excellent developer. She
+                                grasps complex problems quickly and implements solutions with high quality. I am
+                                impressed
+                                with her professionalism and communication skills. She can adjust to dynamic project
+                                situations and a very good team player to have in development team!
+                            </p>
+                            <h3 class="fw-bold text-uppercase testnm-name">Kedar Vaishampayan</h3>
+                            <span class="d-block testnm-post">Director, Software Engineering - Conga</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#customerCarousel"
+                    data-bs-slide="prev" aria-label="Go to back slide">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#customerCarousel"
+                    data-bs-slide="next" aria-label="Go to next slide">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+
             </div>
+        </section>
+        <!-- Recommendations end -->
 
-            <!-- Carousel Inner -->
-            <div class="carousel-inner">
+        <!-- Tech stacks start -->
+        <section class="container py-5 tech-stacks">
 
-                <!-- Review 1 -->
-                <div class="carousel-item active">
-                    <div class="cust-review text-center col-lg-8 mx-auto">
-                        <i class="fa fa-quote-left icon mb-3" aria-hidden="true"></i>
-                        <p class="description">
-                            I had the privilege of managing Vaishnavi during her tenure as a Full Stack Developer on our
-                            team, I’ve had the pleasure of working with her. <br />
+            <h2 class="text-center">Tech Skills</h1>
+                <p class="section-desc text-center mb-5">
+                    A snapshot of the technologies and tools I work with regularly to build efficient and scalable
+                    solutions.</p>
 
-                            Vaishnavi has an exceptional ability to design, develop, and deploy robust ASP.Net
-                            applications while seamlessly integrating both front-end and back-end technologies. Her
-                            technical expertise spans a wide array of tools and frameworks, including but not limited to
-                            C#, MVC, JavaScript, Angular/React, and SQL Server. <br />
+                <!-- SECTION 1: Front-End & UI Development -->
+                <article class="section-card">
+                    <h2 class="section-title-light"><span>Front-End & UI Development</span></h2>
 
-                            What truly sets Vaishnavi apart is her proactive approach to learning and collaboration. She
-                            is always eager to adopt new technologies, stay up-to-date with industry trends, and share
-                            knowledge with the team. In addition to her technical skills, Vaishnavi displayed strong
-                            ownership of her projects and took accountability for delivering high-quality work on time.
-                            Her professionalism, dedication, and positive attitude made a lasting impact on the team and
-                            our projects.
-                        </p>
-                        <h6 class="fw-bold text-uppercase testnm-name">Priya Ekbote</h6>
-                        <span class="d-block testnm-post">Executive Vice President - Aress Software</span>
-                    </div>
-                </div>
+                    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-3">
 
-                <!-- Review 2 -->
-                <div class="carousel-item">
-                    <div class="cust-review text-center col-lg-8 mx-auto">
-                        <i class="fa fa-quote-left icon mb-3" aria-hidden="true"></i>
-                        <p class="description">
-                            I had the pleasure of working with Vaishnavi for a couple of years, and I can confidently
-                            say she is an exceptional software development professional. Her expertise in the .NET
-                            framework, coupled with her ability to deliver high-quality, scalable solutions, was
-                            exceptional. <br />
-
-                            Vaishnavi consistently demonstrated a strong work ethic, attention to detail, and a keen
-                            ability to solve complex problems efficiently. She is a proactive team player who is always
-                            willing to go the extra mile to ensure project success. <br />
-
-                            I highly recommend Vaishnavi for any role that requires deep technical knowledge and a
-                            passion for software development. <br />
-                        </p>
-                        <h6 class="fw-bold text-uppercase testnm-name">Kiran Vidhate</h6>
-                        <span class="d-block testnm-post">Vice President - Aress Software</span>
-                    </div>
-                </div>
-
-                <!-- Review 3 -->
-                <div class="carousel-item">
-                    <div class="cust-review text-center col-lg-8 mx-auto">
-                        <i class="fa fa-quote-left icon mb-3" aria-hidden="true"></i>
-                        <p class="description">
-                            Having worked with Vaishnavi, I must say that Vaishnavi is an excellent developer. She
-                            grasps complex problems quickly and implements solutions with high quality. I am impressed
-                            with her professionalism and communication skills. She can adjust to dynamic project
-                            situations and a very good team player to have in development team!
-                        </p>
-                        <h6 class="fw-bold text-uppercase testnm-name">Kedar Vaishampayan</h6>
-                        <span class="d-block testnm-post">Director, Software Engineering - Conga</span>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- Controls -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#customerCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#customerCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            </button>
-
-        </div>
-    </div>
-    <!-- Recommendations end -->
-
-    <!-- Tech stacks start -->
-    <div class="container py-5 tech-stacks">
-
-        <h2 class="text-center">Tech Skills</h1>
-            <p class="section-desc text-center mb-3">
-                A snapshot of the technologies and tools I work with regularly to build efficient and scalable
-                solutions.</p>
-
-            <!-- SECTION 1: Front-End & UI Development -->
-            <div class="section-card">
-                <h2 class="section-title-light"><span>Front-End & UI Development</span></h2>
-
-                <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-3">
-
-                    <div class="col">
-                        <div class="tech-item-light">
-                            <div class="tech-icon-light icon-html">
-                                <span class="text-logo-small">5</span>
+                        <div class="col">
+                            <div class="tech-item-light">
+                                <div class="tech-icon-light">
+                                    <img src="https://p7.hiclipart.com/preview/116/40/1024/angle-area-text-brand-other-html-5-thumbnail.jpg"
+                                        alt="HTML 5 logo" loading="lazy">
+                                </div>
+                                <span class="tech-name-light">HTML5</span>
                             </div>
-                            <span class="tech-name-light">HTML5</span>
+                        </div>
+                        <div class="col">
+                            <div class="tech-item-light">
+                                <div class="tech-icon-light">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/851px-CSS3_logo_and_wordmark.svg.png"
+                                        alt="CSS3 logo" loading="lazy">
+                                </div>
+                                <span class="tech-name-light">CSS3</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="tech-item-light">
+                                <div class="tech-icon-light">
+                                    <img src="https://static.vecteezy.com/system/resources/previews/027/127/463/non_2x/javascript-logo-javascript-icon-transparent-free-png.png"
+                                        alt="JavaScript logo" loading="lazy">
+                                </div>
+                                <span class="tech-name-light">JavaScript</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="tech-item-light">
+                                <div class="tech-icon-light icon-bootstrap">
+                                    <i class="fa-brands fa-bootstrap"></i>
+                                </div>
+                                <span class="tech-name-light">Bootstrap</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="tech-item-light">
+                                <div class="tech-icon-light icon-react">
+                                    <i class="fa-brands fa-react"></i>
+                                </div>
+                                <span class="tech-name-light">React</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="tech-item-light">
+                                <div class="tech-icon-light">
+                                    <img src="https://toppng.com/uploads/preview/redux-logo-11609374482s00xntsq98.png"
+                                        alt="Redux logo" loading="lazy">
+                                </div>
+                                <span class="tech-name-light">Redux</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="tech-item-light">
+                                <div class="tech-icon-light icon-js">
+                                    <img src="https://w7.pngwing.com/pngs/720/46/png-transparent-jquery-plain-wordmark-logo-icon-thumbnail.png"
+                                        alt="jQuery logo" loading="lazy">
+                                </div>
+                                <span class="tech-name-light">jQuery</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="tech-item-light">
+                                <div class="tech-icon-light icon-ajax">
+                                    <span class="text-logo-small">AJAX</span>
+                                </div>
+                                <span class="tech-name-light">AJAX</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="tech-item-light">
+                                <div class="tech-icon-light icon-xml">
+                                    <i class="fa-solid fa-code"></i>
+                                </div>
+                                <span class="tech-name-light">XML / JSON</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </article>
+
+                <!-- SECTION 2: Back-End & Core Development -->
+                <article class="section-card">
+                    <h2 class="section-title-light"><span>Back-End & Core Development</span></h2>
+
+                    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-3">
+
+                        <div class="col">
+                            <div class="tech-item-light">
+                                <div class="tech-icon-light">
+                                    <img src="https://cdn.imgbin.com/19/5/9/imgbin-c-programming-language-logo-microsoft-visual-studio-net-framework-javascript-icon-x2vvzpHKBmQaYkXV2vQ67GPY7.jpg"
+                                        alt="C# logo" loading="lazy">
+                                </div>
+                                <span class="tech-name-light">C#</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="tech-item-light">
+                                <div class="tech-icon-light">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/.NET_Core_Logo.svg/1200px-.NET_Core_Logo.svg.png"
+                                        alt=".NET Core logo" loading="lazy">
+                                </div>
+                                <span class="tech-name-light">ASP.NET Core</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="tech-item-light">
+                                <div class="tech-icon-light icon-aspnet">
+                                    <img src="https://e7.pngegg.com/pngimages/713/310/png-clipart-net-mvc-logo-asp-net-mvc-logo-net-framework-model-view-controller-framework-text-logo.png"
+                                        alt="ASP.NET MVC logo" loading="lazy">
+                                </div>
+                                <span class="tech-name-light">ASP.NET MVC</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="tech-item-light">
+                                <div class="tech-icon-light icon-dapper">
+                                    <i class="fa-solid fa-plug-circle-bolt"></i>
+                                </div>
+                                <span class="tech-name-light">Dapper / ADO.NET</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="tech-item-light">
+                                <div class="tech-icon-light icon-aspnet">
+                                    <img src="https://creasesolutions.com/wp-content/uploads/2023/05/linq-logo.jpg"
+                                        alt="LINQ logo" loading="lazy">
+                                </div>
+                                <span class="tech-name-light">LINQ</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="tech-item-light">
+                                <div class="tech-icon-light">
+                                    <img src="https://cdn.prod.website-files.com/62d9b9c78f111f03f778e150/68624ec9dc394e09ab806d0b_rest%20api%20image.png"
+                                        alt="REST API logo" loading="lazy">
+                                </div>
+                                <span class="tech-name-light">REST APIs</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="tech-item-light">
+                                <div class="tech-icon-light icon-csharp">
+                                    <img src="https://symbols.getvecta.com/stencil_25/92_service-worker.6054298d4f.png"
+                                        alt="Worker Service logo" loading="lazy">
+                                </div>
+                                <span class="tech-name-light">Worker Service</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="tech-item-light">
+                                <div class="tech-icon-light">
+                                    <img src="https://api.nuget.org/v3-flatcontainer/fluentvalidation/11.10.0/icon"
+                                        alt="Fluent Validations logo" loading="lazy">
+                                </div>
+                                <span class="tech-name-light">Fluent Validations</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="tech-item-light">
+                                <div class="tech-icon-light">
+                                    <img src="https://www.citypng.com/public/uploads/preview/hd-python-logo-symbol-transparent-png-735811696257415dbkifcuokn.png"
+                                        alt="Pthon logo" loading="lazy">
+                                </div>
+                                <span class="tech-name-light">Python</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="tech-item-light">
+                                <div class="tech-icon-light">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Matlab_Logo.png/1144px-Matlab_Logo.png"
+                                        alt="MATLAB logo" loading="lazy">
+                                </div>
+                                <span class="tech-name-light">MATLAB</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="tech-item-light">
-                            <div class="tech-icon-light icon-css">
-                                <span class="text-logo-small">3</span>
-                            </div>
-                            <span class="tech-name-light">CSS3</span>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="tech-item-light">
-                            <div class="tech-icon-light icon-js">
-                                <span class="text-logo-small">JS</span>
-                            </div>
-                            <span class="tech-name-light">JavaScript</span>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="tech-item-light">
-                            <div class="tech-icon-light icon-bootstrap">
-                                <i class="fa-brands fa-bootstrap"></i>
-                            </div>
-                            <span class="tech-name-light">Bootstrap</span>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="tech-item-light">
-                            <div class="tech-icon-light icon-react">
-                                <i class="fa-brands fa-react"></i>
-                            </div>
-                            <span class="tech-name-light">React</span>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="tech-item-light">
-                            <div class="tech-icon-light icon-redux">
-                                <!-- <span class="text-logo-small">RDX</span> -->
-                                <img src="https://placehold.co/30x30/764ABC/FFFFFF?text=R" alt="Redux logo">
+                </article>
 
-                            </div>
-                            <span class="tech-name-light">Redux</span>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="tech-item-light">
-                            <div class="tech-icon-light icon-js">
-                                <span class="text-logo-small">jQ</span>
-                            </div>
-                            <span class="tech-name-light">jQuery</span>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="tech-item-light">
-                            <div class="tech-icon-light icon-ajax">
-                                <span class="text-logo-small">AJAX</span>
-                            </div>
-                            <span class="tech-name-light">AJAX</span>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="tech-item-light">
-                            <div class="tech-icon-light icon-xml">
-                                <i class="fa-solid fa-code"></i>
-                            </div>
-                            <span class="tech-name-light">XML / JSON</span>
-                        </div>
-                    </div>
+                <!-- SECTION 3: Databases & Data Management -->
+                <article class="section-card">
+                    <h2 class="section-title-light"><span>Databases & Data Management</span></h2>
 
-                </div>
-            </div>
+                    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-3">
 
-            <!-- SECTION 2: Back-End & Core Development -->
-            <div class="section-card">
-                <h2 class="section-title-light"><span>Back-End & Core Development</span></h2>
+                        <div class="col">
+                            <div class="tech-item-light">
+                                <div class="tech-icon-light">
+                                    <img src="https://img.icons8.com/?size=1200&id=laYYF3dV0Iew&format=jpg"
+                                        alt="MS SQL Server logo" loading="lazy">
+                                </div>
+                                <span class="tech-name-light">MS SQL Server</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="tech-item-light">
+                                <div class="tech-icon-light">
+                                    <img src="https://images.seeklogo.com/logo-png/48/1/mongodb-logo-png_seeklogo-481256.png"
+                                        alt="MongoDB logo" loading="lazy">
+                                </div>
+                                <span class="tech-name-light">MongoDB</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="tech-item-light">
+                                <div class="tech-icon-light">
+                                    <img src="https://p7.hiclipart.com/preview/358/849/109/postgresql-clip-art-database-logo-database-symbol.jpg"
+                                        alt="PostgreSQL logo" loading="lazy">
+                                </div>
+                                <span class="tech-name-light">PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
 
-                <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-3">
+                <!-- SECTION 4: Cloud, DevOps & Tools -->
+                <article class="section-card">
+                    <h2 class="section-title-light"><span>Cloud, DevOps & Tools</span></h2>
 
-                    <div class="col">
-                        <div class="tech-item-light">
-                            <div class="tech-icon-light icon-csharp">
-                                <i class="fa-solid fa-hashtag"></i>
-                            </div>
-                            <span class="tech-name-light">C#</span>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="tech-item-light">
-                            <div class="tech-icon-light icon-aspnet">
-                                <i class="fa-solid fa-circle-nodes"></i>
-                            </div>
-                            <span class="tech-name-light">ASP.NET Core</span>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="tech-item-light">
-                            <div class="tech-icon-light icon-aspnet">
-                                <span class="text-logo-small">MVC</span>
-                            </div>
-                            <span class="tech-name-light">ASP.NET MVC</span>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="tech-item-light">
-                            <div class="tech-icon-light icon-dapper">
-                                <i class="fa-solid fa-plug-circle-bolt"></i>
-                            </div>
-                            <span class="tech-name-light">Dapper / ADO.NET</span>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="tech-item-light">
-                            <div class="tech-icon-light icon-aspnet">
-                                <span class="text-logo-small">LINQ</span>
-                            </div>
-                            <span class="tech-name-light">LINQ</span>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="tech-item-light">
-                            <div class="tech-icon-light icon-dapper">
-                                <span class="text-logo-small">REST</span>
-                            </div>
-                            <span class="tech-name-light">REST APIs</span>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="tech-item-light">
-                            <div class="tech-icon-light icon-csharp">
-                                <i class="fa-solid fa-gears"></i>
-                            </div>
-                            <span class="tech-name-light">Worker Service</span>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="tech-item-light">
-                            <div class="tech-icon-light icon-dapper">
-                                <span class="text-logo-small">FV</span>
-                            </div>
-                            <span class="tech-name-light">Fluent Validations</span>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="tech-item-light">
-                            <div class="tech-icon-light icon-python">
-                                <i class="fa-brands fa-python"></i>
-                            </div>
-                            <span class="tech-name-light">Python</span>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="tech-item-light">
-                            <div class="tech-icon-light icon-matlab">
-                                <span class="text-logo-small">M</span>
-                            </div>
-                            <span class="tech-name-light">MATLAB</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-3">
 
-            <!-- SECTION 3: Databases & Data Management -->
-            <div class="section-card">
-                <h2 class="section-title-light"><span>Databases & Data Management</span></h2>
+                        <div class="col">
+                            <div class="tech-item-light">
+                                <div class="tech-icon-light">
+                                    <img src="https://www.pngfind.com/pngs/m/597-5975946_microsoft-azure-logo-svg-hd-png-download.png"
+                                        alt="Azure logo" loading="lazy">
+                                </div>
+                                <span class="tech-name-light">Azure Portal</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="tech-item-light">
+                                <div class="tech-icon-light">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ5G8TBFgf4ymhKpyFSrU2xQM3OHOFSuC6vw&s"
+                                        alt="Azure Lofic Apps logo" loading="lazy">
+                                </div>
+                                <span class="tech-name-light">Azure Logic Apps</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="tech-item-light">
+                                <div class="tech-icon-light icon-azure">
+                                    <i class="fa-solid fa-cube"></i>
+                                </div>
+                                <span class="tech-name-light">Azure Functions</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="tech-item-light">
+                                <div class="tech-icon-light icon-iis">
+                                    <img src="https://images.seeklogo.com/logo-png/48/2/microsoft-iis-logo-png_seeklogo-484624.png"
+                                        alt="IIS logo" loading="lazy">
+                                </div>
+                                <span class="tech-name-light">IIS</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="tech-item-light">
+                                <div class="tech-icon-light icon-azure">
+                                    <span class="text-logo-small">ADO</span>
+                                </div>
+                                <span class="tech-name-light">Azure DevOps</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="tech-item-light">
+                                <div class="tech-icon-light icon-jenkins">
+                                    <img src="https://toppng.com/uploads/preview/jenkins-logo-11609365847mufysaivph.png"
+                                        alt="Jenkins logo" loading="lazy">
+                                </div>
+                                <span class="tech-name-light">Jenkins</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="tech-item-light">
+                                <div class="tech-icon-light icon-git">
+                                    <img src="https://pngimg.com/d/github_PNG40.png" alt="GitHub logo" loading="lazy">
+                                </div>
+                                <span class="tech-name-light">Git/GitHub</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="tech-item-light">
+                                <div class="tech-icon-light">
+                                    <img src="https://e7.pngegg.com/pngimages/72/558/png-clipart-gitlab-logo-source-code-computer-software-continuous-integration-others-miscellaneous-angle.png"
+                                        alt="GitLab logo" loading="lazy">
+                                </div>
+                                <span class="tech-name-light">GitLab</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="tech-item-light">
+                                <div class="tech-icon-light">
+                                    <img src="https://e7.pngegg.com/pngimages/5/124/png-clipart-tortoisesvn-apache-subversion-version-control-visualsvn-comparaison-des-clients-pour-subversion-tortise-apache-subversion-version-control-thumbnail.png"
+                                        alt="Tortoise SVN logo" loading="lazy">
+                                </div>
+                                <span class="tech-name-light">Tortoise / SVN</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
 
-                <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-3">
+                <!-- SECTION 5: Methodologies, Testing & Other -->
+                <article class="section-card">
+                    <h2 class="section-title-light"><span>Methodologies, Testing & Other</span></h2>
 
-                    <div class="col">
-                        <div class="tech-item-light">
-                            <div class="tech-icon-light icon-mssql">
-                                <i class="fa-solid fa-server"></i>
+                    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-3">
+                        <div class="col">
+                            <div class="tech-item-light">
+                                <div class="tech-icon-light">
+                                    <img src="https://media.istockphoto.com/id/2028965491/vector/agile-icon-methodology-vector-development-scrum-agile-flexible-software-logo-concept.jpg?s=612x612&w=0&k=20&c=X2FkRpRtIryn88kTXz6R3ecfnCF0cgrScJM4_E5AS_o="
+                                        alt="Agile logo" loading="lazy">
+                                </div>
+                                <span class="tech-name-light">Agile / Scrum</span>
                             </div>
-                            <span class="tech-name-light">MS SQL Server</span>
+                        </div>
+                        <div class="col">
+                            <div class="tech-item-light">
+                                <div class="tech-icon-light">
+                                    <img src="https://w7.pngwing.com/pngs/992/738/png-transparent-jira-hd-logo-thumbnail.png"
+                                        alt="JIRA logo" loading="lazy">
+                                </div>
+                                <span class="tech-name-light">Jira</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="tech-item-light">
+                                <div class="tech-icon-light">
+                                    <img src="https://p7.hiclipart.com/preview/26/74/337/trello-logo-slack-atlassian-trello-thumbnail.jpg"
+                                        alt="Trello logo" loading="lazy">
+                                </div>
+                                <span class="tech-name-light">Trello</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="tech-item-light">
+                                <div class="tech-icon-light">
+                                    <img src="https://www.automatetheplanet.com/wp-content/uploads/2023/04/nUnit-logo.png"
+                                        alt="Nunit logo" loading="lazy">
+                                </div>
+                                <span class="tech-name-light">Nunit</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="tech-item-light">
+                                <div class="tech-icon-light">
+                                    <img src="https://smartstrategy.eu/wp-content/uploads/2022/06/tdd-test-driven-development.webp"
+                                        alt="Test Driven Development logo" loading="lazy">
+                                </div>
+                                <span class="tech-name-light">Test Driven Development</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="tech-item-light">
-                            <div class="tech-icon-light icon-mongo">
-                                <i class="fa-solid fa-database"></i>
-                            </div>
-                            <span class="tech-name-light">MongoDB</span>
-                        </div>
-                    </div>
-                    <!-- PostgreSQL (Using Image Logo) -->
-                    <div class="col">
-                        <div class="tech-item-light">
-                            <div class="tech-icon-light">
-                                <!-- Placeholder image for PostgreSQL logo -->
-                                <img src="https://placehold.co/30x30/336791/FFFFFF?text=Pg" alt="PostgreSQL logo">
-                            </div>
-                            <span class="tech-name-light">PostgreSQL</span>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-
-            <!-- SECTION 4: Cloud, DevOps & Tools -->
-            <div class="section-card">
-                <h2 class="section-title-light"><span>Cloud, DevOps & Tools</span></h2>
-
-                <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-3">
-
-                    <div class="col">
-                        <div class="tech-item-light">
-                            <div class="tech-icon-light icon-azure">
-                                <i class="fa-brands fa-windows"></i>
-                            </div>
-                            <span class="tech-name-light">Azure Portal</span>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="tech-item-light">
-                            <div class="tech-icon-light icon-azure">
-                                <i class="fa-solid fa-diagram-project"></i>
-                            </div>
-                            <span class="tech-name-light">Azure Logic Apps</span>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="tech-item-light">
-                            <div class="tech-icon-light icon-azure">
-                                <i class="fa-solid fa-cube"></i>
-                            </div>
-                            <span class="tech-name-light">Azure Functions</span>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="tech-item-light">
-                            <div class="tech-icon-light icon-iis">
-                                <span class="text-logo-small">IIS</span>
-                            </div>
-                            <span class="tech-name-light">IIS</span>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="tech-item-light">
-                            <div class="tech-icon-light icon-azure">
-                                <span class="text-logo-small">ADO</span>
-                            </div>
-                            <span class="tech-name-light">Azure DevOps</span>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="tech-item-light">
-                            <div class="tech-icon-light icon-jenkins">
-                                <i class="fa-brands fa-jenkins"></i>
-                            </div>
-                            <span class="tech-name-light">Jenkins</span>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="tech-item-light">
-                            <div class="tech-icon-light icon-git">
-                                <i class="fa-brands fa-github"></i>
-                            </div>
-                            <span class="tech-name-light">Git/GitHub</span>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="tech-item-light">
-                            <div class="tech-icon-light icon-git">
-                                <i class="fa-brands fa-gitlab"></i>
-                            </div>
-                            <span class="tech-name-light">GitLab</span>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="tech-item-light">
-                            <div class="tech-icon-light icon-git">
-                                <span class="text-logo-small">SVN</span>
-                            </div>
-                            <span class="tech-name-light">Tortoise / SVN</span>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- SECTION 5: Methodologies, Testing & Other -->
-            <div class="section-card">
-                <h2 class="section-title-light"><span>Methodologies, Testing & Other</span></h2>
-
-                <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-3">
-
-                    <div class="col">
-                        <div class="tech-item-light">
-                            <div class="tech-icon-light icon-agile">
-                                <i class="fa-solid fa-handshake"></i>
-                            </div>
-                            <span class="tech-name-light">Agile / Scrum</span>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="tech-item-light">
-                            <div class="tech-icon-light icon-jira">
-                                <span class="text-logo-small">JIRA</span>
-                            </div>
-                            <span class="tech-name-light">Jira</span>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="tech-item-light">
-                            <div class="tech-icon-light icon-trello">
-                                <i class="fa-brands fa-trello"></i>
-                            </div>
-                            <span class="tech-name-light">Trello</span>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="tech-item-light">
-                            <div class="tech-icon-light icon-test">
-                                <i class="fa-solid fa-vial-circle-check"></i>
-                            </div>
-                            <span class="tech-name-light">Xunit / Nunit / Moq</span>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="tech-item-light">
-                            <div class="tech-icon-light icon-test">
-                                <span class="text-logo-small">TDD</span>
-                            </div>
-                            <span class="tech-name-light">Test Driven Development</span>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-    </div>
-
+                </article>
+        </section>
+    </main>
     <!-- Tech stack end -->
 
     <!-- Footer start -->
-    <footer class="text-center text-white " style="background-color: #1C1C1C">
+    <footer class="text-center text-white" style="background-color:#1C1C1C" role="contentinfo">
         <div class="container">
-            <!-- Section: Links -->
-            <section class="mt-5">
-                <div class="row text-center d-flex justify-content-center pt-5">
-                    <div class="col-md-2">
-                        <h6 class="text-uppercase font-weight-bold">
-                            <a href="aboutme.html" class="text-white">About me</a>
-                        </h6>
-                    </div>
-
-                    <div class="col-md-2">
-                        <h6 class="text-uppercase font-weight-bold">
-                            <a href="blog.html" class="text-white">blogs</a>
-                        </h6>
-                    </div>
-
-                    <div class="col-md-2">
-                        <h6 class="text-uppercase font-weight-bold">
-                            <a href="projects.html" class="text-white">Projects</a>
-                        </h6>
-                    </div>
-
-                    <div class="col-md-2">
-                        <h6 class="text-uppercase font-weight-bold">
-                            <a href="contact.html" class="text-white">Contact</a>
-                        </h6>
-                    </div>
-                </div>
-            </section>
-            <!-- Section: Links -->
+            <nav aria-label="Footer Navigation">
+                <ul class="row text-center d-flex justify-content-center pt-5 list-unstyled">
+                    <li class="col-md-2"><a href="aboutme.html" class="text-white">About Me</a></li>
+                    <li class="col-md-2"><a href="blog.html" class="text-white">Blogs</a></li>
+                    <li class="col-md-2"><a href="projects.html" class="text-white">Projects</a></li>
+                    <li class="col-md-2"><a href="contact.html" class="text-white">Contact</a></li>
+                </ul>
+            </nav>
 
             <hr class="my-5" />
 
-            <!-- Section: Text -->
-            <section class="mb-5">
-                <div class="row d-flex justify-content-center">
-                    <div class="col-lg-8">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-                            distinctio earum repellat quaerat voluptatibus placeat nam,
-                            commodi optio pariatur est quia magnam eum harum corrupti
-                            dicta, aliquam sequi voluptate quas.
-                        </p>
-                    </div>
-                </div>
+            <section class="mb-5" aria-label="Footer Description">
+                <p class="mx-auto" style="max-width:700px">
+                    Passionate about technology and problem-solving. Let's connect and collaborate to build something
+                    impactful.
+                </p>
             </section>
-            <!-- Section: Text -->
 
-            <!-- Section: Social -->
-            <section class="text-center mb-5">
-                <a href="mailto:vaishnavi.bachhav111@gmail.com" class="text-white me-4">
+            <div class="text-center mb-5 social-links" aria-label="Social Links">
+                <a href="mailto:vaishnavi.bachhav111@gmail.com" class="text-white me-4"
+                    aria-label="Email Vaishnavi Bachhav">
                     <i class="fa-solid fa-envelope"></i>
                 </a>
-                <a href="tel:+918329448844" class="text-white me-4">
+                <a href="tel:+918329448844" class="text-white me-4" aria-label="Call Vaishnavi Bachhav">
                     <i class="fa-solid fa-phone"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/vaishnavi-bachhav" class="text-white me-4">
+                <a href="https://www.linkedin.com/in/vaishnavi-bachhav" class="text-white me-4"
+                    aria-label="LinkedIn Profile">
                     <i class="fa-brands fa-linkedin"></i>
                 </a>
-                <a href="https://github.com/vaishnavi-bachhav" class="text-white me-4">
+                <a href="https://github.com/vaishnavi-bachhav" class="text-white me-4" aria-label="GitHub Profile">
                     <i class="fa-brands fa-github"></i>
                 </a>
-            </section>
-            <!-- Section: Social -->
+            </div>
         </div>
-
-        <!-- Copyright -->
         <div class="text-center p-3 copyright">
             © 2025 Copyright by Vaishnavi Bachhav
         </div>
-        <!-- Copyright -->
     </footer>
     <!-- Footer end-->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
-        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
-        crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
 </body>
 
 </html>
