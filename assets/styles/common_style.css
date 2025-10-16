@@ -691,43 +691,14 @@ body {
 
 /* Contact us end */
 /* Projects start */
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-} */
-
 img {
   max-inline-size: 100%;
 }
 
-body {
-  /* font-family: system-ui, sans-serif;
-  font-size: 1rem;
-  line-height: 1.7;
-  color: #070707;
-  background: #fff; */
-
-  /* Use whichever works best for you */
-  /* min-block-size: 100vh;
-  min-block-size: 100dvh;
-  min-block-size: 100svh;
-
-  display: grid;
-  grid-template-columns:
-    [sidebar-start]
-    5rem
-    [sidebar-end main-start]
-    1fr
-    [main-end]; */
-}
-
 .projects {
   display: grid;
-  grid-template-columns:
-    /* [sidebar-start]
-    5rem */
-    [sidebar-end main-start] 1fr [main-end];
+  grid-template-columns: [main-start] 1fr [main-end];
+  padding: 2rem 1rem;
 }
 
 .projects h1 {
