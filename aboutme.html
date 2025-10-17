@@ -20,35 +20,49 @@
 
 <body>
 
-  <header class="main-header">
-    <div class="container">
-      <nav class="navbar navbar-expand-lg main-nav px-0 align-items-center">
-        <!-- Logo -->
-        <a class="navbar-brand d-flex align-items-center" href="/mojo">
-          <img src="assets/images/Transparent-brand.png" alt="vaishnavi-bachhav.github.io">
-        </a>
+ <header class="main-header">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg main-nav px-0 align-items-center" aria-label="Main Navigation">
+      <!-- Logo -->
+      <a class="navbar-brand d-flex align-items-center" href="/mojo">
+        <img src="assets/images/Transparent-brand.png" alt="vaishnavi-bachhav.github.io">
+      </a>
 
-        <!-- Toggle Button -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu"
-          aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="icon-bar icon-bar-1"></span>
-          <span class="icon-bar icon-bar-2"></span>
-          <span class="icon-bar icon-bar-3"></span>
-        </button>
+      <!-- Toggle Button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu"
+        aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="icon-bar icon-bar-1"></span>
+        <span class="icon-bar icon-bar-2"></span>
+        <span class="icon-bar icon-bar-3"></span>
+      </button>
 
-        <!-- Navbar Menu -->
-        <div class="collapse navbar-collapse justify-content-end" id="mainMenu">
-          <ul class="navbar-nav text-uppercase f1">
-            <li class="nav-item"><a class="nav-link" href="index.html">home</a></li>
-            <li class="nav-item"><a class="nav-link active" href="aboutme.html">about me</a></li>
-            <li class="nav-item"><a class="nav-link" href="blog.html">blog</a></li>
-            <li class="nav-item"><a class="nav-link" href="projects.html">projects</a></li>
-            <li class="nav-item"><a class="nav-link" href="contact.html">contact</a></li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-  </header>
+      <!-- Navbar Menu -->
+      <div class="collapse navbar-collapse justify-content-end" id="mainMenu">
+        <ul class="navbar-nav text-uppercase f1">
+          <li class="nav-item"><a class="nav-link" href="index.html">home</a></li>
+
+          <!-- About Me with Nested Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="aboutme.html" id="aboutDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              about me
+            </a>
+            <ul class="dropdown-menu skill-list" aria-labelledby="aboutDropdown">
+              <li><a class="dropdown-item" href="#experience">Experience</a></li>
+              <li><a class="dropdown-item" href="#internships">Internships</a></li>
+              <li><a href="https://drive.google.com/file/d/1AmTV9JnGamisCCRYElKWRawxXRFZdfSp/view?usp=sharing" class="dropdown-item" target="_blank">Resume</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="blog.html">blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
   <!-- About me start -->
   <div class="container">
     <!-- 1. Profile Image Section -->
@@ -222,7 +236,7 @@
 
   <!-- About me end -->
   <!-- Experience start -->
-  <div class="container py-5">
+  <section class="container py-5" id="experience">
     <div class="section-subtitle-container">
       <h2 class="section-subtitle">Experience</h2>
       <p class="section-desc">Organizations I’ve worked with to build scalable and impactful web applications.</p>
@@ -290,12 +304,12 @@
       </div>
 
     </div>
-  </div>
+  </section>
   <!-- Experience end -->
 
   <!-- Internships start-->
   <!-- Section: Timeline -->
-  <section class="py-5 container internships">
+  <section class="py-5 container internships" id="internships">
     <div class="section-subtitle-container">
       <h2 class="section-subtitle">Internships</h2>
       <p class="section-desc">Where I learned, built, and grew — from intern to software engineer.</p>
